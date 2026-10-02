@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Galeri Gitar: Akustik, Listrik, Bass</title>
+    
+    <!-- Memuat Font dari Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@300;400;500&display=swap">
+    
+    <!-- Memanggil File CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <b>Galeri Gitar</b>
+        </header>
+        
+        <h1>Tiga gitar, <em>tiga cara</em> bersuara</h1>
+        
+        <!-- Galeri Akordeon -->
+        <div class="acc" id="acc"></div>
+        
+        <p class="intro">Tiga gitar, tiga karakter suara. Semua dimulai dari senar yang bergetar, tetapi cara suaranya dibentuk sangat berbeda.</p>
+        
+        <!-- Detail Bagian Bawah -->
+        <div id="chs"></div>
+    </div>
+
+    <!-- File JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Bagian Peta Lokasi -->
+        <div class="map-wrap">
+            <h2 style="text-align: center;">MAP KOTA JAKARTA</h2>
+            
+            <div class="map-box">
+                <!-- Iframe dari Google Maps (Contoh: Blok M Square) -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2721865324545!2d106.79721887499313!3d-6.241022893746673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f16b2512f711%3A0xc1230f892dbaf3bb!2sBlok%20M%20Square!5e0!3m2!1sid!2sid!4v1727780000000!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    
+   <!-- SEKSI FORMULIR PERTANYAAN -->
+    <section class="faq-section">
+        <div class="faq-card">
+            <h2>Berikan Pertanyaan</h2>
+            <!-- Pastikan menggunakan id="contactForm" -->
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="nama" placeholder="Nama Lengkap" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="pesan" rows="4" placeholder="Pesan atau pertanyaan..." required></textarea>
+                </div>
+                <!-- Tombol Kirim -->
+                <button type="submit" class="btn-send">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="custom-footer">
+        <h3>Raka Muhammad Rayhan</h3>
+        <nav class="footer-nav">
+            <a href="#beranda">Beranda</a>
+            <a href="#akustik">Gitar Akustik</a>
+            <a href="#listrik">Gitar Listrik</a>
+            <a href="#bass">Gitar Bass</a>
+        </nav>
+        <p class="copyright">&copy;Eksplorasi Gitar.Tugas Pemrograman Web 1.</p>
+    </footer>
+
+<!-- Pemutar Musik Custom yang Estetik -->
+<div class="music-player-box">
+    <button id="playPauseBtn" class="play-btn" onclick="toggleAudio()">▶</button>
+    <div class="music-info">
+        <span class="music-title">🎵 Avenged Sevenfold - Cosmic</span>
+        <span class="music-status" id="statusText">Ketuk untuk Memutar</span>
+    </div>
+    <!-- Audio disembunyikan tapi tetap berjalan di latar belakang -->
+    <audio id="bgMusic" loop>
+        <source src="avengedSevenfold-Cosmic.mp3" type="audio/mpeg">
+    </audio>
+</div>
+</div>
+</body>
+</html>
+
+</body>
+</html>
